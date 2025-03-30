@@ -1,0 +1,268 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body {
+  margin: 0px;
+  background-color: #F7EDE8;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* HEADER */
+/* Стили для меню */
+nav {
+  position: relatives;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F7EDE8;
+  display: flex;
+  padding: 0px 0;
+  padding-top: 24px;
+}
+
+.container {
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-right: 100px;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 60px;
+  margin-left: 0px;
+}
+
+nav a {
+  color: black;
+  font-size: 16px;
+  font-family: "Montserrat Alternates";
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #CD4631;
+}
+
+/* КНОПОЧКИ */
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.recent-episodes-btn {
+  background-color: #F7EDE8;
+  border: 2px solid #000;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 20px;
+  border-radius: 8px;
+  height: 41px;
+  width: 192px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-btn {
+  background-color: #000;
+  color: #F7EDE8;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 20px;
+  border-radius: 8px;
+  height: 41px;
+  width: 136px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-btn:hover {
+  background-color: #F7EDE8;
+  color: #000;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.recent-episodes-btn:hover {
+  background-color: #000;
+  color: #F7EDE8;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+#footer-background {
+  background-color: #f8f9fa;
+  padding: 40px 0 20px;
+  box-sizing: border-box;
+  min-height: 618px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 100px;
+}
+
+.full-width-section {
+  width: 99.5vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+}
+
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  flex-wrap: wrap;
+}
+
+.column {
+  padding: 10px;
+  box-sizing: border-box;
+  color: #000;
+}
+
+
+/* СТИЛИ ДЛЯ 1 КОЛОНКИ ФУТЕРА */
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 275px;
+  text-align: left;
+}
+
+.column-1 img[alt="Logotip"] {
+  height: auto;
+  width: 74px;
+  margin-bottom: 40px;
+}
+
+.column-1 p:first-of-type {
+  font-size: 14px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #4D4D4D;
+  font-weight: 500;
+  margin: 0;
+}
+
+.rightlogo {
+  padding-top: 50px;
+}
+
+.column-1 div {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.column-1 div img:hover {
+  opacity: 0.8;
+}
+
+/* СТИЛИ ДЛЯ ВТОРОЙ КОЛОНКИ ФУТЕРА */
+.column-2,
+.column-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-top: 30px;
+}
+
+/* СТИЛИ ДЛЯ ЧЕТВЕРТОЙ КОЛОНКИ ФУТЕРА */
+.column-4 {
+  align-self: flex-start;
+  margin-top: 30px;
+  text-align: left;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #4D4D4D;
+  font-weight: 500;
+}
+
+.column-4 div {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.TextColumn {
+  margin-top: 60px;
+}
+
+/* НИЖНЯЯ ЧЕРТА И ТЕКСТ ПОД НЕЙ ДЛЯ ФУТЕРА*/
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-divider {
+  height: 0.5px;
+  background-color: #4D4D4D;
+  margin-bottom: 20px;
+  margin-top: 130px;
+}
+
+.footer-legal {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #4D4D4D;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.legal-links {
+  display: flex;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.legal-link {
+  color: #4D4D4D;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.legal-link:hover {
+  color: #242424; 
+  text-decoration: underline; 
+}
+
+.divider {
+  color: #666666; 
+  margin: 0 5px; 
+}
