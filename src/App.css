@@ -258,11 +258,120 @@ nav a:hover {
 }
 
 .legal-link:hover {
-  color: #242424; 
-  text-decoration: underline; 
+  color: #242424;
+  text-decoration: underline;
 }
 
 .divider {
-  color: #666666; 
-  margin: 0 5px; 
+  color: #666666;
+  margin: 0 5px;
+}
+
+/* ПЕРВЫЙ БЛОК САЙТА */
+#FirstBlock {
+  height: 1330px;
+  padding-top: 65px;
+}
+
+h1 {
+  font-size: 96px;
+  font-weight: 700;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.container {
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MainText {
+  text-align: center;
+  width: 100%;
+}
+
+.UndderMaiinText {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat Alternates", sans-serif;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+button:hover {
+  border-color: transparent;
+}
+
+.ButtonMainPage {
+  display: flex;
+  justify-content: center;
+  /* Горизонтальное выравнивание по центру */
+  align-items: center;
+  /* Вертикальное выравнивание (если нужно) */
+  width: 100%;
+  /* Занимает всю ширину родительского контейнера */
+  margin: 0 auto;
+  /* Автоматические отступы по бокам */
+  padding: 20px 0;
+  /* Отступы сверху/снизу */
+}
+
+.Button-MainPage {
+  font-size: 14px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  background-color: #000;
+  border: 2px solid #000;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 12px 24px;
+  transition: background-color 0.8s, color 0.8s;
+  border-radius: 8px;
+  height: 65px;
+  width: 185px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.Button-MainPage:hover {
+  background-color: #CD4631;
+  border-color: transparent;
+}
+
+#FirstBlock img[alt="Iscra"] {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-height: 80vh;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#FirstBlock img[alt="Mvitok"] {
+  left: 5%;
+  max-width: 300px;
+}
+
+#FirstBlock img[alt="Iscra"] {
+  right: 5%;
+  max-width: 250px;
+}
+
+#FirstBlock img[alt="Mvitok"] {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#FirstBlock img[alt="Mvitok"] {
+  left: 0;
 }
