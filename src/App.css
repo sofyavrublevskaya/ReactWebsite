@@ -269,7 +269,7 @@ nav a:hover {
 
 /* ПЕРВЫЙ БЛОК САЙТА */
 #FirstBlock {
-  height: 1330px;
+  height: 1470px;
   padding-top: 65px;
 }
 
@@ -375,3 +375,175 @@ button:hover {
 #FirstBlock img[alt="Mvitok"] {
   left: 0;
 }
+
+/* КАРУСЕЛЬ */
+.carousel-container {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  /* Занимает всю высоту контейнера */
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  /* Расстояние между фотографиями */
+  align-items: center;
+  margin-top: 115px;
+  margin-left: 0px;
+  margin-right: 0px;
+  /* Центрируем по вертикали */
+}
+
+.carousel-image {
+  position: relative;
+  width: 373px;
+  height: 373px;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  flex-shrink: 0;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.indicator.active {
+  background: #CD4631;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background: #CD4631;
+}
+
+/* Стили для полноширинной карусели */
+.full-width-carousel-section {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-top: 60px;
+  margin-left: -50%;
+  margin-right: -50%;
+  background-color: #F7EDE8;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.carousel-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.carousel-track {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.carousel-slide {
+  width: 373px;
+  height: 373px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.carousel-slide:hover {
+  transform: scale(1.03);
+}
+
+
+/* Стили для блока "Supported by" */
+.supported-by-section {
+  background-color: #F7EDE8;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.supported-by-text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 22px;
+  color: #000000;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.supported-by-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.block-line {
+  height: 2px;
+  width: 100%;
+  background-color: #4D4D4D;
+  margin: 20px 0;
+}
+
+/* КОНЕЦ ПЕРВОГО БЛОКА!!!!!! */
