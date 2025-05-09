@@ -29,6 +29,42 @@ function Landing() {
         }, 3000);
         return () => clearInterval(interval);
     }, [carouselImages.length]);
+
+    // Карусель для отзывов (третья секция)
+    const testimonialPhotos = [
+        "src/assets/1otziv.png",
+        "src/assets/2otziv.png",
+        "src/assets/3otziv.png"
+    ];
+
+    const [testimonialIndex, setTestimonialIndex] = useState(0);
+    const visibleTestimonials = 2;
+
+    const nextTestimonial = () => {
+        setTestimonialIndex(prev =>
+            prev + visibleTestimonials >= testimonialPhotos.length ? 0 : prev + 1
+        );
+    };
+
+    const prevTestimonial = () => {
+        setTestimonialIndex(prev =>
+            prev === 0 ? testimonialPhotos.length - visibleTestimonials : prev - 1
+        );
+    };
+
+    const getVisibleTestimonials = () => {
+        let endIndex = testimonialIndex + visibleTestimonials;
+        if (endIndex > testimonialPhotos.length) {
+            return [
+                ...testimonialPhotos.slice(testimonialIndex),
+                ...testimonialPhotos.slice(0, endIndex - testimonialPhotos.length)
+            ];
+        }
+        return testimonialPhotos.slice(testimonialIndex, endIndex);
+    };
+
+
+
     return (
         <>
             <section id="FirstBlock">
@@ -47,7 +83,6 @@ function Landing() {
                     <img src="src/assets/Mvitok.svg" alt="Mvitok" />
                     <img src="src/assets/Iscra.png" alt="Iscra" />
                 </div>
-                {/* Модифицированная карусель */}
                 {/* Полноширинная карусель */}
                 <div className="full-width-carousel-section">
                     <div className="carousel-container">
@@ -93,16 +128,16 @@ function Landing() {
                     </div>
                 </div>
             </section>
-             <img
-                        src="src/assets/perexodfirsttwo.png"
-                        alt="StarCard"
-                        style={{
-                            position: 'absolute',
-                            top: '181%',  /* Поднимаем выше на 20px */
-                            right: '670px',  /* Выдвигаем вправо на 20px */
-                            zIndex: '1'
-                        }}
-                    />
+            <img
+                src="src/assets/perexodfirsttwo.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '181%',
+                    right: '670px',
+                    zIndex: '1'
+                }}
+            />
             {/* Вторая секция */}
             <section id="SecondBlock">
                 <div className="container">
@@ -144,8 +179,8 @@ function Landing() {
                         alt="StarCard"
                         style={{
                             position: 'absolute',
-                            top: '58%',  /* Поднимаем выше на 20px */
-                            right: '130px',  /* Выдвигаем вправо на 20px */
+                            top: '58%',
+                            right: '130px',
                             zIndex: '1'
                         }}
                     />
@@ -154,14 +189,81 @@ function Landing() {
                         alt="LineCard"
                         style={{
                             position: 'absolute',
-                            left: '130px',  
-                            top: '78%', 
-                            transform: 'translateY(-20%)', 
+                            left: '130px',
+                            top: '78%',
+                            transform: 'translateY(-20%)',
                             zIndex: '1'
                         }}
                     />
                 </div>
             </section>
+            <img
+                src="src/assets/perexodTwoThree.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '348%',
+                    right: '670px',
+                    zIndex: '1'
+                }}
+            />
+            <section id="ThirdBlock">
+                <div className="container">
+                    <h2 className="centered-titleThird">
+                        <font color="#000000">What our listeners say</font>
+                    </h2>
+                    <p className="ThirdBlockText">
+                        <font color="#4D4D4D">Their experience throughout every platform</font>
+                    </p>
+
+                    {/* Карусель с фотографиями отзывов */}
+                    <div className="testimonials-carousel">
+                        <div className="carousel-container2">
+                            <div className="carousel-track">
+                                {getVisibleTestimonials().map((photo, index) => (
+                                    <div key={`${testimonialIndex}-${index}`} className="carousel-slide2">
+                                        <img src={photo} alt={`Testimonial ${testimonialIndex + index + 1}`} />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        {/* Контейнер для стрелок под фотографиями */}
+                        <div className="carousel-arrows-bottom">
+                            <button className="carousel-arrow prev" onClick={prevTestimonial}>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 18L9 12L15 6" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </button>
+
+                            <button className="carousel-arrow next" onClick={nextTestimonial}>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 6L15 12L9 18" stroke="#CD4631" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <img
+                src="src/assets/Sparkle.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '365%',
+                    right: '1120px',
+                    zIndex: '1'
+                }}
+            />
+             <img
+                src="src/assets/perexodTwoThree.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '450%',
+                    right: '670px',
+                    zIndex: '1', height: '150px', weight: '150px'
+                }}
+            />
         </>
     )
 }
