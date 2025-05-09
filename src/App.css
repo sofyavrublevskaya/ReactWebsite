@@ -546,4 +546,104 @@ button:hover {
   margin: 20px 0;
 }
 
-/* КОНЕЦ ПЕРВОГО БЛОКА!!!!!! */
+/* КОНЕЦ ПЕРВОГО БЛОКА ПЕРВОЙ СТРАНИЧКИ!!!!!! */
+/* ВТОРОЙ БЛОК */
+#SecondBlock {
+  background-color: #ffffff;
+  position: relative;
+  left: 49.4%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  height: 1375px;
+}
+
+.centered-title {
+  font-size: 59px;
+  font-weight: 700;
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: 140px;
+}
+
+/* КОЛОНКИ */
+.Columns {
+  display: flex;
+  gap: 215px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.FirstColumn,
+.SecondColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.TextColumn {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* КАРТОЧКА ПОДКАСТА */
+.PodcastCard {
+  height: 366px;
+  background-color: #F7EDE8;
+  width: 1160px;
+  margin-top: 120px;
+  border-radius: 10px;
+}
+
+.CardPodcast {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Dwoetochie {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 95px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  height: 100px;
+}
+
+.InfoAvtor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.InfoAvtor p {
+  margin: 0;
+  font-size: 14px;
+  color: #000000;
+}
