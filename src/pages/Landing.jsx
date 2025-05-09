@@ -254,12 +254,98 @@ function Landing() {
                     zIndex: '1'
                 }}
             />
-             <img
+            <img
                 src="src/assets/perexodTwoThree.png"
                 alt="StarCard"
                 style={{
                     position: 'absolute',
                     top: '450%',
+                    right: '670px',
+                    zIndex: '1', height: '150px', weight: '150px'
+                }}
+            />
+              <img
+                src="src/assets/fouracsess.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '455%',
+                    right: '310px',
+                    zIndex: '1'
+                }}
+            />
+            <section id="FourBlock">
+                <div className="container">
+                    <h2 className="centered-titleThird">
+                        <font color="#000000">Membership benefits</font>
+                    </h2>
+                    <p className="ThirdBlockText">
+                        <font color="#4D4D4D">Become our sponsor and get all benefits</font>
+                    </p>
+                    <div className="FourColumns">
+                        <div className="column">
+                            <div className="column-item">
+                                <img src="src/assets/1icon.png" alt="1icon" />
+                                <p className="Top4"><b>Topic by Request</b></p>
+                                <p className="Preimus4">Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+
+                        <div className="column">
+                            <div className="column-item">
+                                <img src="src/assets/2icon.png" alt="2icon" />
+                                <p className="Top4"><b>Exclusive Content</b></p>
+                                <p className="Preimus4">Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+
+                        <div className="column">
+                            <div className="column-item">
+                                <img src="src/assets/3icon.png" alt="3icon" />
+                                <p className="Top4"><b>Join the Community</b></p>
+                                <p className="Preimus4">Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="FourColumnsTwo">
+                        <div className="column">
+                            <div className="column-item">
+                                <img src="src/assets/4icon.png" alt="1icon" />
+                                <p className="Top4"><b>Livestreaming Access</b></p>
+                                <p className="Preimus4">Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+
+                        <div className="column">
+                            <div className="column-item">
+                                <img src="src/assets/5icon.png" alt="2icon" />
+                                <p className="Top4"><b>Exclusive Episodes & Merch</b></p>
+                                <p className="Preimus4">Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+
+                        <div className="column">
+                            <div className="column-item">
+                                <img src="src/assets/6icon.png" alt="3icon" />
+                                <p className="Top4"><b>And much more!</b></p>
+                                <p className="Preimus4">Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+                        <div className="ButtonFourBlock">
+                            <button className="Button-MainPage">
+                                SEE PRICING
+                            </button>
+                        </div>
+                </div>
+            </section>
+            <img
+                src="src/assets/perexodTwoThree.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '599%',
                     right: '670px',
                     zIndex: '1', height: '150px', weight: '150px'
                 }}

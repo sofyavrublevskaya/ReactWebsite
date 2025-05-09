@@ -766,6 +766,65 @@ button:hover {
   transition: all 0.3s ease;
   border: 2px solid;
 }
+
 .carousel-container2 {
   height: 340px;
+}
+
+/* ЧЕТВЕРТЫЙ БЛОК */
+#FourBlock {
+  background-color: #FFFFFF;
+  position: relative;
+  left: 49.4%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  height: 1231px;
+}
+
+.FourColumns {
+  flex-direction: column;
+  column-count: 3;
+}
+
+.Preimus4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+  font-weight: medium;
+}
+
+.Top4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.FourColumns img {
+  margin-left: 125px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.FourColumnsTwo {
+  flex-direction: column;
+  column-count: 3;
+}
+
+.FourColumnsTwo img {
+  margin-left: 125px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+
+.ButtonFourBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-top: 100px;
 }
