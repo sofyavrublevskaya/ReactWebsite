@@ -677,6 +677,7 @@ button:hover {
 }
 
 .ThirdBlockText {
+  font-family: "Montserrat Alternates", sans-serif;
   color: #4D4D4D;
   font-size: 23px;
   margin-top: 20px;
@@ -819,7 +820,7 @@ button:hover {
 }
 
 
-.ButtonFourBlock{
+.ButtonFourBlock {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -827,4 +828,79 @@ button:hover {
   margin: 0 auto;
   padding: 20px 0;
   margin-top: 100px;
+}
+
+/* ПЯТЫЙ БЛОК ПЕРВОЙ СТРАНИЧКИ */
+#FiveBlock {
+  background-color: #F7EDE8;
+  position: relative;
+  left: 49.4%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  height: 1456px;
+}
+
+.FiveColumns {
+  flex-direction: column;
+  column-count: 2;
+  margin-top: 100px;
+}
+
+.FiveColumns img {
+  margin-bottom: 20px;
+}
+
+.ButtonFiveBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+
+.Button-FivePage {
+  font-size: 14px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  background-color: #000;
+  border: 2px solid #000;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 12px 24px;
+  transition: background-color 0.8s, color 0.8s;
+  border-radius: 8px;
+  height: 62px;
+  width: 253px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.Button-FivePage:hover {
+  background-color: #CD4631;
+  border-color: transparent;
+}
+
+/* ШЕСТОЙ БЛОК ПЕРВОЙ СТРАНИЧКИ */
+#SixBlock {
+  background-color: #FFFFFF;
+  position: relative;
+  left: 49.4%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  height: 1196px;
+}
+
+.SixColumns {
+  flex-direction: column;
+  column-count: 3;
+  margin-top: 100px;
+  gap: 20px;
 }

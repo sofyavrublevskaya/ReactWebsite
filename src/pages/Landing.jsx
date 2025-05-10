@@ -63,8 +63,6 @@ function Landing() {
         return testimonialPhotos.slice(testimonialIndex, endIndex);
     };
 
-
-
     return (
         <>
             <section id="FirstBlock">
@@ -264,7 +262,7 @@ function Landing() {
                     zIndex: '1', height: '150px', weight: '150px'
                 }}
             />
-              <img
+            <img
                 src="src/assets/fouracsess.png"
                 alt="StarCard"
                 style={{
@@ -333,11 +331,11 @@ function Landing() {
                             </div>
                         </div>
                     </div>
-                        <div className="ButtonFourBlock">
-                            <button className="Button-MainPage">
-                                SEE PRICING
-                            </button>
-                        </div>
+                    <div className="ButtonFourBlock">
+                        <button className="Button-MainPage">
+                            SEE PRICING
+                        </button>
+                    </div>
                 </div>
             </section>
             <img
@@ -350,6 +348,72 @@ function Landing() {
                     zIndex: '1', height: '150px', weight: '150px'
                 }}
             />
+            <img
+                src="src/assets/SparkleFive.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '632%',
+                    right: '40px',
+                    zIndex: '1', height: '240px', weight: '240px'
+                }}
+            />
+            <section id="FiveBlock">
+                <div className="container">
+                    <h2 className="centered-titleThird">
+                        <font color="#000000">Recent Episodes</font>
+                    </h2>
+                    <p className="ThirdBlockText">
+                        <font color="#4D4D4D">Available on your favorite platform</font>
+                    </p>
+                    <div className="FiveColumns">
+                        <img src="src/assets/1epizod.png" alt="epizodes" />
+                        <img src="src/assets/3epizod.png" alt="epizodes" />
+                        <img src="src/assets/5epizod.png" alt="epizodes" />
+                        <img src="src/assets/2epizod.png" alt="epizodes" />
+                        <img src="src/assets/4epizod.png" alt="epizodes" />
+                        <img src="src/assets/6 epizod.png" alt="epizodes" />
+                    </div>
+                    <div className="ButtonFiveBlock">
+                        <button className="Button-FivePage">
+                            BROWSE ALL EPISODES
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <img
+                src="src/assets/perexodTwoThree.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '775%',
+                    right: '670px',
+                    zIndex: '1', height: '150px', weight: '150px'
+                }}
+            />
+            <img
+                src="src/assets/SparkleSix.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '793%',
+                    right: '1050px',
+                    zIndex: '1', height: '120px', weight: '120px'
+                }}
+            />
+            <section id="SixBlock">
+                <div className="container">
+                    <h2 className="centered-titleThird">
+                        <font color="#000000">Become our sponsor</font>
+                    </h2>
+                    <p className="ThirdBlockText">
+                        <font color="#4D4D4D">Get exclusive episodes, merch and more</font>
+                    </p>
+                    <div className="SixColumns">
+
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
