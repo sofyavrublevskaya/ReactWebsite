@@ -903,4 +903,215 @@ button:hover {
   column-count: 3;
   margin-top: 100px;
   gap: 20px;
+  text-align: left;
+}
+
+.SixColumnsTwo {
+  flex-direction: column;
+  column-count: 3;
+  margin-top: 20px;
+  gap: 20px;
+  text-align: left;
+}
+
+.MemberBlock {
+  border: 2px solid #000;
+  width: 373px;
+  height: 357px;
+  border-radius: 8px;
+}
+
+.FamilyBlock {
+  border: 2px solid #CD4631;
+  width: 373px;
+  height: 357px;
+  border-radius: 8px;
+  background-color: #F7EDE8;
+}
+
+.GlavSix {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  margin-left: 40px;
+  margin-top: 60px;
+}
+
+.SixTwoText {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 14px;
+  font-weight: medium;
+  color: #4D4D4D;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.SixTwoTextTwo {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4D4D4D;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.SpisokSixText {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 40px;
+  margin-top: 20px;
+  line-height: 2.5;
+}
+
+.SaleSixBlock {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.SaleMonthSixBlock {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.SaleMonthBoth {
+  margin-left: 70px;
+}
+
+.Button-SixPage {
+  font-size: 14px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  background-color: #000;
+  border: 2px solid #000;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 12px 24px;
+  transition: background-color 0.8s, color 0.8s;
+  border-radius: 8px;
+  height: 62px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  margin-top: 0px;
+  margin-left: 40px;
+}
+
+.Button-SixPage:hover {
+  background-color: #CD4631;
+  border-color: transparent;
+}
+
+.ButtonSixBlock {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+
+/* СЕДЬМОЙ БЛОК 1 СТРАНИЧКИ */
+#SevenBlock {
+  background-color: #FFFFFF;
+  position: relative;
+  left: 49.4%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  height: 1303px;
+}
+
+.SevenColumn {
+  column-count: 2;
+  column-gap: 20px;
+  margin-top: 100px;
+}
+
+/* ВОСЬМОЙ БЛОК */
+#e8Block {
+  background-color: #EDF3F7;
+  position: relative;
+  left: 49.4%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  height: 820px;
+}
+
+.centered-titleEight {
+  margin-bottom: 12px;
+  /* Гарантируем блочное отображение: */
+  display: block;
+  width: 100%;
+  font-size: 59px;
+  font-weight: 700;
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.imgbeta {
+  margin-left: 545px;
+  margin-top: 120px;
+}
+
+.Button-8Page {
+  font-size: 14px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  background-color: #000;
+  border: 2px solid #000;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 12px 24px;
+  transition: background-color 0.8s, color 0.8s;
+  border-radius: 8px;
+  height: 62px;
+  width: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  margin-top: 0px;
+}
+
+.Button-8Page:hover {
+  background-color: #CD4631;
+  border-color: transparent;
+}
+
+.Button8Block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-top: 140px;
+}
+.EthBlockText {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #4D4D4D;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.imgplatfom {
+    margin-left: 505px;
+  margin-top: 10px;
 }

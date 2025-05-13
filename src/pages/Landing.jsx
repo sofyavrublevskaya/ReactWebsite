@@ -401,6 +401,26 @@ function Landing() {
                     zIndex: '1', height: '120px', weight: '120px'
                 }}
             />
+            <img
+                src="src/assets/StarSixBlock.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '820%',
+                    right: '70px',
+                    zIndex: '2', height: '200px', weight: '200px'
+                }}
+            />
+            <img
+                src="src/assets/VectorSixBlock.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '910%',
+                    right: '1275px',
+                    zIndex: '2', height: '120px', weight: '120px'
+                }}
+            />
             <section id="SixBlock">
                 <div className="container">
                     <h2 className="centered-titleThird">
@@ -409,11 +429,187 @@ function Landing() {
                     <p className="ThirdBlockText">
                         <font color="#4D4D4D">Get exclusive episodes, merch and more</font>
                     </p>
-                    <div className="SixColumns">
 
+                    <div className="SixColumns">
+                        <div className="MemberBlock">
+                            <p className="GlavSix">Member</p>
+                            <p className="SixTwoText"><font color="#4D4D4D">Lorem ipsum dolor sit amet consectet <br />
+                                cing elit, sed do eiusmod tempor.</font></p>
+                            <div className="ButtonSixBlock">
+                                <button className="Button-SixPage">
+                                    SUBSCRIBE
+                                </button>
+                                <div className="SaleMonthBoth">
+                                    <p className="SaleSixBlock"><font color="#CD4631">$9.99</font></p>
+                                    <p className="SaleMonthSixBlock"><font color="#4D4D4D">/month</font> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="FamilyBlock">
+                            <p className="GlavSix">Family</p>
+                            <p className="SixTwoText"><font color="#4D4D4D">Lorem ipsum dolor sit amet consectet <br />
+                                cing elit, sed do eiusmod tempor.</font></p>
+                            <div className="ButtonSixBlock">
+                                <button className="Button-SixPage">
+                                    SUBSCRIBE
+                                </button>
+                                <div className="SaleMonthBoth">
+                                    <p className="SaleSixBlock"><font color="#CD4631">$14.99</font></p>
+                                    <p className="SaleMonthSixBlock"><font color="#4D4D4D">/month</font> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="MemberBlock">
+                            <p className="GlavSix">Official</p>
+                            <p className="SixTwoText"><font color="#4D4D4D">Lorem ipsum dolor sit amet consectet <br />
+                                cing elit, sed do eiusmod tempor.</font></p>
+                            <div className="ButtonSixBlock">
+                                <button className="Button-SixPage">
+                                    SUBSCRIBE
+                                </button>
+                                <div className="SaleMonthBoth">
+                                    <p className="SaleSixBlock"><font color="#CD4631">$29.99</font></p>
+                                    <p className="SaleMonthSixBlock"><font color="#4D4D4D">/month</font> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="SixColumnsTwo">
+                        <div className="MemberBlock">
+                            <p className="SixTwoTextTwo"><font color="#4D4D4D">What’s included:</font></p>
+                            <p className="SpisokSixText"><font color="#000000">• Exclusive Content <br />
+                                • 5% Discount on Merch <br />
+                                • Join the Community <br />
+                                • Livestreaming Access</font></p>
+                        </div>
+                        <div className="FamilyBlock">
+                            <p className="SixTwoTextTwo"><font color="#4D4D4D">What’s included:</font></p>
+                            <p className="SpisokSixText"><font color="#000000"><b>• Everything in Tier 1</b> <br />
+                                • Free tickets to Events <br />
+                                • Limited Edition Merch <br />
+                                • Promote your Product <br />
+                                • Request Topic </font></p>
+                        </div>
+                        <div className="MemberBlock">
+                            <p className="SixTwoTextTwo"><font color="#4D4D4D">What’s included:</font></p>
+                            <p className="SpisokSixText"><font color="#000000"><b>• Everything in Tier 2 </b><br />
+                                • Exclusive Badge on Livestreaming <br />
+                                • Become an Official Sponsor <br />
+                                • Early Access to All Episodes <br />
+                                • Free Stikers and Merch </font></p>
+                        </div>
                     </div>
                 </div>
             </section>
+            <img
+                src="src/assets/perexodTwoThree.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '920%',
+                    right: '670px',
+                    zIndex: '1', height: '150px', weight: '150px'
+                }}
+            />
+            <section id="SevenBlock">
+                <div className="container">
+                    <h2 className="centered-titleThird">
+                        <font color="#000000">Article and News</font>
+                    </h2>
+                    <p className="ThirdBlockText">
+                        <font color="#4D4D4D">News, tips, tricks and more</font>
+                    </p>
+                    <div className="SevenColumn"><img src="src/assets/imgSevenBl1.png" alt="imgSevenBl1" />
+                        <img src="src/assets/imgSevenBl2.png" alt="imgSevenBl1" /></div>
+                    <div className="ButtonFiveBlock">
+                        <button className="Button-8Page">
+                            BROWSE ALL
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <img
+                src="src/assets/sevzvezd.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '965%',
+                    right: '1200px',
+                    zIndex: '1', height: '185px', weight: '184px'
+                }}
+            />
+            <img
+                src="src/assets/ScribbleSevZv.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '1035%',
+                    right: '80px',
+                    zIndex: '1', height: '240px', weight: '240px'
+                }}
+            />
+            <img
+                src="src/assets/PerexodLast.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '1078%',
+                    right: '670px',
+                    zIndex: '1', height: '150px', weight: '150px'
+                }}
+            />
+            <img
+                src="src/assets/Sparkle8.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '1142%',
+                    right: '585px',
+                    zIndex: '1', height: '120px', weight: '120px'
+                }}
+            />
+            <section id="e8Block">
+                <div className="container">
+                    <div className="imgbeta"><img src="src/assets/beta.png" alt="beta" /></div>
+                    <h2 className="centered-titleEight">
+                        <font color="#000000">Available now <br />
+                            Pod of Cast App</font>
+                    </h2>
+                    <p className="ThirdBlockText">
+                        <font color="#4D4D4D">Available on your favorite platform</font>
+                    </p>
+                    <div className="Button8Block">
+                        <button className="Button-8Page">
+                            DOWNLOAD NOW
+                        </button>
+                    </div>
+                    <p className="EthBlockText">
+                        <font color="#4D4D4D">Content also available on:</font>
+                    </p>
+                    <div className="imgplatfom"><img src="src/assets/platform.png" alt="platform" /></div>
+                </div>
+            </section>
+            <img
+                src="src/assets/left8.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '1123%',
+                    right: '1085px',
+                    zIndex: '1'
+                }}
+            />
+              <img
+                src="src/assets/right8.png"
+                alt="StarCard"
+                style={{
+                    position: 'absolute',
+                    top: '1097%',
+                    right: '0px',
+                    zIndex: '1'
+                }}
+            />
         </>
     )
 }
