@@ -18,6 +18,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/Landing" element={<Landing />} />
           <Route path="/about" element={<About />} />
           <Route path="/SingleBlog" element={<SingleBlog />} />
         </Routes>

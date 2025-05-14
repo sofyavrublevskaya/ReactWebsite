@@ -12,7 +12,7 @@ function Header() {
                     </Link>
                 </div>
                 <ul>
-                    <Link to='/PodcastDetali'><li>Episodes</li></Link>
+                    <Link to='/Landing'><li>Episodes</li></Link>
                     <Link to='/About'><li>About</li></Link>
                     <Link to='/SingleBlog'><li>More</li></Link>
                 </ul>
