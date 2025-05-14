@@ -12,9 +12,9 @@ function Header() {
                     </Link>
                 </div>
                 <ul>
-                    <Link><li>Episodes</li></Link>
-                    <Link><li>About</li></Link>
-                    <Link><li>More</li></Link>
+                    <Link to='/PodcastDetali'><li>Episodes</li></Link>
+                    <Link to='/About'><li>About</li></Link>
+                    <Link to='/SingleBlog'><li>More</li></Link>
                 </ul>
                 <div className="navigation-buttons">
                     <Link to="/" className="recent-episodes-btn">
