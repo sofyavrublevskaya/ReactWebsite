@@ -1,6 +1,37 @@
 import React, { useState, useEffect } from "react";
+import { useMutation } from '@tanstack/react-query';
+import { submitContactForm } from '../services/contactService';
 
 function AboutUs() {
+    const [formData, setFormData] = useState({
+        fullName: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+    });
+
+    const mutation = useMutation({
+        mutationFn: submitContactForm,
+        onSuccess: () => {
+            alert('Сообщение отправлено успешно!');
+            // Здесь можно сбросить форму или выполнить другие действия
+        },
+        onError: (error) => {
+            alert(`Ошибка: ${error.message}`);
+        }
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        mutation.mutate(formData);
+    };
+
     // Карусель для отзывов (третья секция)
     const testimonialPhotos = [
         "src/assets/sponsor1.png",
@@ -268,88 +299,73 @@ function AboutUs() {
                         <font color="#4D4D4D">Send your message to us</font>
                     </p>
                     <div className="LineTwoForm"><img src="src/assets/lineform.png" alt="lineform" /></div>
-                    <form className="contact-form">
+                    <form className="contact-form" onSubmit={handleSubmit}>
                         <div className="form-row">
                             <div className="form-group">
-                                <label htmlFor="fullName"><p className="form-text">Full name<font color="#CD4631">  *</font></p></label>
+                                <label htmlFor="fullName">Full name*</label>
                                 <input
                                     type="text"
                                     id="fullName"
+                                    name="fullName"
                                     placeholder="Sofya Vrublevskaya"
+                                    value={formData.fullName}
+                                    onChange={handleChange}
                                     required
                                 />
                             </div>
-
                             <div className="form-group">
-                                <label htmlFor="email"><p className="form-text">Email<font color="#CD4631">  *</font></p></label>
+                                <label htmlFor="email">Email*</label>
                                 <input
                                     type="email"
                                     id="email"
+                                    name="email"
                                     placeholder="vrublevskaya@gmail.com"
+                                    value={formData.email}
+                                    onChange={handleChange}
                                     required
                                 />
                             </div>
                         </div>
-
                         <div className="form-row">
                             <div className="form-group">
-                                <label htmlFor="phone"><p className="form-text">Phone<font color="#CD4631">  *</font></p></label>
+                                <label htmlFor="phone">Phone*</label>
                                 <input
                                     type="tel"
                                     id="phone"
+                                    name="phone"
                                     placeholder="Phone"
+                                    value={formData.phone}
+                                    onChange={handleChange}
                                 />
                             </div>
-
                             <div className="form-group">
-                                <label htmlFor="subject"><p className="form-text">Subject<font color="#CD4631">  *</font></p></label>
+                                <label htmlFor="subject">Subject*</label>
                                 <input
                                     type="text"
                                     id="subject"
+                                    name="subject"
                                     placeholder="Subject..."
+                                    value={formData.subject}
+                                    onChange={handleChange}
                                 />
                             </div>
                         </div>
-
                         <div className="form-groupmess">
-                            <label htmlFor="message"><p className="form-text">Message<font color="#CD4631">  *</font></p></label>
+                            <label htmlFor="message">Message*</label>
                             <textarea
                                 id="message"
+                                name="message"
                                 placeholder="Your message goes here..."
+                                value={formData.message}
+                                onChange={handleChange}
                                 required
                             ></textarea>
                         </div>
-
                         <div className="form-row">
-                            <p className="PodForm"><font color="#CD4631">  *required</font></p>
-                            <div className="ButtonMainPage">
-                                <button className="Button-MainPage">
-                                    SEND MESSAGE
-                                </button>
-                            </div>
+                            <p>*required</p>
+                            <button type="submit">SEND MESSAGE</button>
                         </div>
                     </form>
-                </div>
-            </section>
-            <section id="LastBlockAB">
-                <div className="container">
-                    <div className="imgbeta"><img src="src/assets/beta.png" alt="beta" /></div>
-                    <h2 className="centered-titleEight">
-                        <font color="#000000">Available now <br />
-                            Pod of Cast App</font>
-                    </h2>
-                    <p className="ThirdBlockText">
-                        <font color="#4D4D4D">Available on your favorite platform</font>
-                    </p>
-                    <div className="Button8Block">
-                        <button className="Button-8Page">
-                            DOWNLOAD NOW
-                        </button>
-                    </div>
-                    <p className="EthBlockText">
-                        <font color="#4D4D4D">Content also available on:</font>
-                    </p>
-                    <div className="imgplatfom"><img src="src/assets/platform.png" alt="platform" /></div>
                 </div>
             </section>
             <img
